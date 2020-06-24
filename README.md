@@ -12,6 +12,16 @@
 
 #flutter
 
-
+windows:
 安装完flutterSDK以后,要装jdk1.8,然后装AndroidSDK,下载完AndroidSDK以后,要进去tools/bin里面,输入 .\sdkmanager "platform-tools" "platforms;android-29"
 环境变量是 ANDROID_HOME,要把tools和platform-tools放到path里
+linux:
+<a href="https://links.jianshu.com/go?to=http%3A%2F%2Fdl.google.com%2Fandroid%2Fandroid-sdk_r24.4.1-linux.tgz">这是sdk的链接，下载安装配置好环境变量,记得刷新环境</a>
+export ANDROID_HOME=‘PATH’/android-sdk-linux
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
+#配置完环境变量和刷新完，就可以用命令行了
+android update sdk --no-ui
+
+android list sdk --all
