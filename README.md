@@ -28,3 +28,8 @@ android update sdk --no-ui
 android list sdk --all
 
 也可以用sdkmanager，不过得是绝对路径下的sdkmanager才有用
+
+#dart 环境变量，因为linux的vscode没法直接运行dart类型的文件，原因是没布置环境变量
+export DART_HOME=pwd/flutter/bin/cache/dart-sdk/bin
+export PATH="${DART_HOME}:${PATH}
+完事刷新重启vscode
