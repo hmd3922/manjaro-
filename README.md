@@ -18,7 +18,7 @@ windows:
 环境变量是 ANDROID_HOME,要把tools和platform-tools放到path里
 linux:
 
-<a href="https://links.jianshu.com/go?to=http%3A%2F%2Fdl.google.com%2Fandroid%2Fandroid-sdk_r24.4.1-linux.tgz">这是sdk的链接，下载安装配置好环境变量,记得刷新环境</a>
+<a href="https://dl.google.com%2Fandroid%2Fandroid-sdk_r24.4.1-linux.tgz">这是sdk的链接，下载安装配置好环境变量,记得刷新环境</a>
 export ANDROID_HOME=‘PATH’/android-sdk-linux
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
@@ -30,6 +30,7 @@ android list sdk --all
 也可以用sdkmanager，不过得是绝对路径下的sdkmanager才有用
 
 #dart 环境变量，因为linux的vscode没法直接运行dart类型的文件，原因是没布置环境变量
+
 export DART_HOME=pwd/flutter/bin/cache/dart-sdk/bin
 export PATH="${DART_HOME}:${PATH}
 完事刷新重启vscode
