@@ -25,5 +25,6 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 
 #配置完环境变量和刷新完，就可以用命令行了
 android update sdk --no-ui
-
 android list sdk --all
+
+也可以用sdkmanager，不过得是绝对路径下的sdkmanager才有用
