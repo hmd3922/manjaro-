@@ -31,3 +31,10 @@ linux:
                 export DART_HOME=pwd/flutter/bin/cache/dart-sdk/bin
                 export PATH="${DART_HOME}:${PATH}
                 完事刷新重启vscode
+# 关于无法自动挂载ｎｔｆｓ
+
+打开文件夹右键无法自动挂载的磁盘分区，查看硬盘所在分区以及挂载点
+sudo vim /etc/fstab 　手动写入挂载点
+格式：
+硬盘分区　挂载点　 ntfs umask=0022,uid=id,gid=1001,rw 0 0
+后面的参数用命令ｉｄ查看
